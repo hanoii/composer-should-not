@@ -4,12 +4,15 @@ This plugin removes certain versions from your dependency list preventing them
 from being installed and provide a reason for doing so.
 
 While the idea of versions constraint is that you can do this on your 
-`composer.json` that works OK as long as everybody in your team knows what to
+`composer.json` that works OK as long as everybody in your team knows what to do
 when changing or requiring a new version constraint.
 
 This module is meant to provide a fail-safe and document a reason for doing so 
 that if others tries to change the current constraint that will fail and a 
 warning with a reason will be provided.
+
+> [!NOTE]
+> [dev versions](https://getcomposer.org/doc/articles/versions.md#branches) are always allowed.
 
 The configuration of this plugin is in the ["extra" property](https://getcomposer.org/doc/04-schema.md#extra)
 of your `composer.json` file.
@@ -28,9 +31,6 @@ i.e.:
     } 
 }
 ```
-
-> [!NOTE]
-> [dev versions](https://getcomposer.org/doc/articles/versions.md#branches) are always allowed.
 
 The above is what encouraged the creation of this plugin, see https://www.drupal.org/project/block_class/issues/3468976.
 
