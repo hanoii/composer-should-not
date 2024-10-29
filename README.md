@@ -41,3 +41,5 @@ the module from being upgrade to 3.0.
 However, other times I wanted something like this for ducumenting why a certain 
 dependency should be locked to a specific version. Something that I needed 
 several times in Drupal projects.
+
+[![asciicast](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc.svg)](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc)
