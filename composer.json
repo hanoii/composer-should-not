@@ -1,5 +1,7 @@
 {
     "name": "hanoii/composer-should-not",
+    "description": "Provides a way to prevent installing configured versions of packages.",
+    "license": "MIT",
     "type": "composer-plugin",
     "require": {
         "composer-plugin-api": "^2.0"
