@@ -24,10 +24,6 @@ composer require hanoii/composer-should-not
 The configuration of this plugin is through the ["extra" property](https://getcomposer.org/doc/04-schema.md#extra)
 of your `composer.json` file.
 
-> [!NOTE]
-> [dev versions](https://getcomposer.org/doc/articles/versions.md#branches) are always allowed.
-
-i.e.:
 
 ```json
 {
@@ -42,9 +38,12 @@ i.e.:
 }
 ```
 
+> [!NOTE]
+> [dev versions](https://getcomposer.org/doc/articles/versions.md#branches) are always allowed.
+
 [![asciicast](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc.svg?v=1)](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc)
 
---
+----
 
 The above is what encouraged the creation of this plugin, see https://www.drupal.org/project/block_class/issues/3468976.
 
