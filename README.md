@@ -41,7 +41,7 @@ of your `composer.json` file.
 > [!NOTE]
 > [dev versions](https://getcomposer.org/doc/articles/versions.md#branches) are always allowed.
 
-i.e.
+## Demo
 
 [![asciicast](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc.svg?v=1)](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc)
 
