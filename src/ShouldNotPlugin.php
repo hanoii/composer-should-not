@@ -1,5 +1,4 @@
 <?php
-// src/ShouldNotPlugin.php
 
 namespace Hanoii;
 
@@ -30,8 +29,7 @@ class ShouldNotPlugin implements PluginInterface, EventSubscriberInterface {
     ];
   }
 
-  public function onPrePoolCreate(PrePoolCreateEvent $event)
-  {
+  public function onPrePoolCreate(PrePoolCreateEvent $event) {
     $packages = $event->getPackages();
     $filteredPackages = [];
 
@@ -88,6 +86,4 @@ class ShouldNotPlugin implements PluginInterface, EventSubscriberInterface {
 
   public function deactivate(Composer $composer, IOInterface $io) {}
   public function uninstall(Composer $composer, IOInterface $io) {}
-
-
 }
