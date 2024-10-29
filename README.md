@@ -47,12 +47,13 @@ of your `composer.json` file.
 
 ----
 
-The above is what encouraged the creation of this plugin, see https://www.drupal.org/project/block_class/issues/3468976.
+The provided example configuration is what encouraged the creation of this plugin, 
+see https://www.drupal.org/project/block_class/issues/3468976.
 
 They decided to create a new major version out of an older codebase :shrug:, 
 and it has proven to be an issue for us, so with this we can preemptively avoid 
 the module from being upgrade to 3.0.
 
 However, other times I wanted something like this for ducumenting why a certain 
-dependency should be locked to a specific version. Something that I needed 
-several times in Drupal projects.
+dependency should be locked to a specific version (something that I needed 
+several times in Drupal projects).
