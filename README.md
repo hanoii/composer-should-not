@@ -43,7 +43,7 @@ of your `composer.json` file.
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc.svg?v=1)](https://asciinema.org/a/Vm7NWvuuFmP07l6wdHN5qaPZc)
+![composer-should-not demo animated gif](https://github.com/user-attachments/assets/f84f7d15-26f7-477e-b8f3-6fc07cba66df)
 
 ----
 
