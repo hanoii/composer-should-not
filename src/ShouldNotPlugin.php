@@ -46,6 +46,7 @@ class ShouldNotPlugin implements PluginInterface, EventSubscriberInterface {
             // Filter out versions that matches the should-not constraint
             $processed[$packageName]['deny'][] = $package->getPrettyVersion();
             $processed[$packageName]['reason'] = $this->config[$packageName]['reason'] ?? '';
+            $processed[$packageName]['reasons'] = $this->config[$packageName]['reasons'] ?? [];
           }
           else {
             // Add allowed versions back to the pool
@@ -73,7 +74,12 @@ class ShouldNotPlugin implements PluginInterface, EventSubscriberInterface {
         $versions = implode(', ', $info['deny']);
         $reason = '';
         if (!empty($info['reason'])) {
-          $reason = "\n    - {$info['reason']}";
+          $reason .= "\n    - {$info['reason']}";
+        }
+        if (!empty($info['reasons'])) {
+          foreach ($info['reasons'] as $r) {
+            $reason .= "\n    - {$r}";
+          }
         }
         $this->io->writeError(
           "<warning>Warning:\n  {$name} versions [{$versions}] where removed from the dependecy list as they should-not be installed.{$reason}</warning>",

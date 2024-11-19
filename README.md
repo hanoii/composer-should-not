@@ -38,6 +38,20 @@ of your `composer.json` file.
 }
 ```
 
+Alternatively, you can also provide an array of reasons:
+
+```json
+    "should-not": {
+        "twig/twig": {
+            "version": "~3.14.1",
+            "reasons": [
+                "3.14.1: Recurssion issue on drupal https://www.drupal.org/project/drupal/issues/3485956.",
+                "3.14.2: Performance issues on drupal https://www.drupal.org/project/drupal/issues/3487031."
+            ]
+        }
+    },
+```
+
 > [!NOTE]
 > [dev versions](https://getcomposer.org/doc/articles/versions.md#branches) are always allowed.
 
@@ -50,9 +64,9 @@ of your `composer.json` file.
 The provided example configuration is what encouraged the creation of this plugin, 
 see https://www.drupal.org/project/block_class/issues/3468976.
 
-They decided to create a new major version out of an older codebase :shrug:, 
+~They decided to create a new major version out of an older codebase :shrug:, 
 and it has proven to be an issue for us, so with this we can preemptively avoid 
-the module from being upgrade to 3.0.
+the module from being upgrade to 3.0.~ This was fixed with a new 4.0.0 release.
 
 However, other times I wanted something like this for ducumenting why a certain 
 dependency should be locked to a specific version (something that I needed 
